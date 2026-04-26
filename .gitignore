@@ -11,12 +11,16 @@ frontend/medify-app/.angular/
 frontend/medify-app/node_modules/
 /node_modules/
 frontend/medify-app/package-lock.json
+frontend/medify-app/package.json
 frontend/medify-app/yarn.lock
 /package-lock.json
 /yarn.lock
 
 # Environment files
 frontend/medify-app/.env
+frontend/medify-app/environments/environment
+frontend/medify-app/environments/environment.ts
+frontend/medify-app/environments/environment.prod.ts
 
 # Angular CLI and build artefacts
 frontend/medify-app/.angular-cli.json
