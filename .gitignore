@@ -1,110 +1,65 @@
-# Angular specific
-frontend/medify-app/dist/
-frontend/medify-app/out-tsc/
-frontend/medify-app/tmp/
-frontend/medify-app/coverage/
-frontend/medify-app/e2e/test-output/
-frontend/medify-app/.angular/
-frontend/medify-app/.angular/
-
-# Node modules and dependency files
-frontend/medify-app/node_modules/
-/node_modules/
-frontend/medify-app/package-lock.json
-frontend/medify-app/package.json
-frontend/medify-app/yarn.lock
-/package-lock.json
-/yarn.lock
-
-# Environment files
-frontend/medify-app/.env
-frontend/medify-app/environments/environment
-frontend/medify-app/environments/environment.ts
-frontend/medify-app/environments/environment.prod.ts
-
-# Angular CLI and build artefacts
-frontend/medify-app/.angular-cli.json
-frontend/medify-app/.ng/
-
-# TypeScript cache
-frontend/medify-app/*.tsbuildinfo
-
-# Logs
-frontend/medify-app/npm-debug.log*
-frontend/medify-app/yarn-debug.log*
-frontend/medify-app/yarn-error.log*
-
-# Angular specific
-frontend/medify-app/dist/
-frontend/medify-app/out-tsc/
-frontend/medify-app/tmp/
-/coverage/
-frontend/medify-app/e2e/test-output/
-frontend/medify-app/.angular/
-
-# Node modules and dependency files
-/node_modules/
-/package-lock.json
-/yarn.lock
-
-# Environment files
-/.env
-
-# Angular CLI and build artefacts
-/.angular-cli.json
-/.ng/
-
-# TypeScript cache
-*.tsbuildinfo
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Dependencies
+# Ignorar node_modules en cualquier nivel
 node_modules/
 **/node_modules/
 
-# Angular build outputs
-dist/
-coverage/
-.angular/
-.cache/
+# Ignorar dependencias y lock files (pero no package.json)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+frontend/medify-app/package-lock.json
+frontend/medify-app/yarn.lock
 
-# Firebase
+# Firebase (solo archivos locales/secretos, no la carpeta functions/lib)
 .firebase/
+frontend/medify-app/.firebase/
 .firebaserc
+frontend/medify-app/.firebaserc
 firebase-debug.log
+frontend/medify-app/firebase-debug.log
 firebase-debug.*.log
+frontend/medify-app/firebase-debug.*.log
 .runtimeconfig.json
+frontend/medify-app/.runtimeconfig.json
 
-# Environment files
+# Variables de entorno
 .env
 .env.*
 frontend/medify-app/.env
 frontend/medify-app/.env.*
 !frontend/medify-app/.env.example
+frontend/medify-app/src/environments/environments.prod.ts
+frontend/medify-app/src/environments/environments.ts
+
+# Build outputs de Angular
+frontend/medify-app/dist/
+frontend/medify-app/out-tsc/
+frontend/medify-app/tmp/
+frontend/medify-app/coverage/
+frontend/medify-app/.angular/
+dist/
+coverage/
+.angular/
 
 # Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-pnpm-debug.log*
-*.log
 
-# OS files
+# Archivos de sistema/editor
 .DS_Store
 Thumbs.db
-
-# Editors
 .vscode/
+frontend/medify-app/.vscode/
 .idea/
 
-# TypeScript / build artifacts
+# TypeScript build info
 *.tsbuildinfo
 
-# Optional local artifacts
+# Otros artefactos locales
 lib/
 functions/lib/
+frontend/medify-app/lib/
+frontend/medify-app/functions/lib/
 functions/coverage/
+frontend/medify-app/coverage/
