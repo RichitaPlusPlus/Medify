@@ -9,6 +9,7 @@ pnpm-lock.yaml
 frontend/medify-app/package-lock.json
 frontend/medify-app/yarn.lock
 
+
 # Firebase (solo archivos locales/secretos, no la carpeta functions/lib)
 .firebase/
 frontend/medify-app/.firebase/
